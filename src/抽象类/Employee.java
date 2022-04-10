@@ -1,6 +1,6 @@
-package 多态;
+package 抽象类;
 
-public class Employee
+public abstract class Employee
 {
     private String name;
     private String address;
@@ -12,9 +12,14 @@ public class Employee
         this.address = address;
         this.number = number;
     }
+    public double computePay()
+    {
+        System.out.println("Inside Employee computePay");
+        return 0.0;
+    }
     public void mailCheck()
     {
-        System.out.println("employee的check Mailing a check to " + this.name
+        System.out.println("Mailing a check to " + this.name
                 + " " + this.address);
     }
     @Override

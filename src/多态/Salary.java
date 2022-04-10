@@ -11,7 +11,7 @@ public class Salary extends Employee {
     }
     @Override
     public void mailCheck() {
-        System.out.println("Within mailCheck of Salary class ");
+        System.out.println("salary的check ");
         System.out.println("Mailing check to " + getName()
                 + " with salary " + salary);
     }

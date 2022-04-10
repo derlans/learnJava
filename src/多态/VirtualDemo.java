@@ -4,11 +4,11 @@ public class VirtualDemo
 {
     public static void main(String [] args)
     {
-        Salary s = new Salary("Mohd Mohtashim", "Ambehta, UP", 3, 3600.00);
-        Employee e = new Salary("John Adams", "Boston, MA", 2, 2400.00);
-        System.out.println("Call mailCheck using Salary reference --");
+        Salary s = new Salary("TW", "WHUT", 3, 3600.00);
+        Employee e = new Salary("ZXH", "WC", 2, 2400.00);
+        System.out.println("看看屠威");
         s.mailCheck();
-        System.out.println("\n Call mailCheck using Employee reference--");
+        System.out.println("\n 看看郑旭辉");
         e.mailCheck();
     }
 }
