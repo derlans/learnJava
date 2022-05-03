@@ -1,6 +1,8 @@
 package test;
+
 import learnclass.Student;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 /**
  * @author derlan
