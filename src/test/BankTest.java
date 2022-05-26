@@ -1,4 +1,5 @@
 package test;
+import org.junit.Before;
 import 实验一.银行.Bank;
 import org.junit.Test;
 
@@ -6,8 +7,8 @@ import static org.junit.Assert.assertEquals;
 
 public class BankTest {
     private Bank bank = new Bank();
-    @Test
-    public void testCreateUser() {
+    @Before
+    public void initBank(){
         bank.createUser("张三", "123456");
         bank.createUser("李四", "123456");
         bank.createUser("王五", "123456");
@@ -16,6 +17,9 @@ public class BankTest {
         bank.createUser("周八", "123456");
         bank.createUser("吴九", "123456");
         bank.createUser("郑十", "123456");
+    }
+    @Test
+    public void testCreateUser() {
         try {
             bank.createUser("郑十", "123456");
         }
